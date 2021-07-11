@@ -1,4 +1,4 @@
-.App {
+ .App {
   text-align: center;
 }
 
@@ -21,9 +21,23 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #F29423;
 }
 
+
+
+.site-layout-background{
+  background-color: #F29423 !important;
+}
+
+#components-layout-demo-fixed-sider .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.site-layout .site-layout-background {
+  background: #E7E7E7;
+}
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +50,4 @@
     transform: rotate(360deg);
   }
 }
+ 
