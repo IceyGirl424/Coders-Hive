@@ -27,7 +27,11 @@
 
 
 .site-layout-background{
-  background-color: #F29423 !important;
+  background-color: #F9C784 !important;
+}
+
+.background-header{
+  background-color: #F29423;
 }
 
 #components-layout-demo-fixed-sider .logo {
