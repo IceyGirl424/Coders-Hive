@@ -18,6 +18,8 @@ import { Card } from 'antd';
 import { Typography } from 'antd';
 import { white } from 'color-name';
 import { Image } from 'antd';
+import { Link, Redirect } from 'react-router-dom';
+
 
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -61,6 +63,7 @@ function App() {
         </Menu.Item>
       </Menu>
     </Sider>
+    
     <Layout className="site-layout" style={{ marginLeft: 200 }}>
 
       <Header className="background-header" style={{ padding: 0 }} >
@@ -113,6 +116,7 @@ function App() {
 
         </div>
       </Content>
+      {/* <Pagination defaultCurrent={1} total={50} ></Pagination> */}
       <Footer style={{ textAlign: 'center' }}>Coder's Hive ©2021 Created by Team Alpha</Footer>
     </Layout>
   </Layout>
