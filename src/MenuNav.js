@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
 import "antd/dist/antd.css";
 import "./App.css";
-import { Button } from "antd";
 import { Layout, Menu } from "antd";
 import {
   AppstoreOutlined,
@@ -13,13 +11,11 @@ import {
   UploadOutlined,
   VideoCameraOutlined,
 } from "@ant-design/icons";
-import { Row, Col } from "antd";
-import { Card } from "antd";
 import { Typography } from "antd";
-import { white } from "color-name";
-import { Image } from "antd";
 import { Link, Redirect } from "react-router-dom";
+import { Collapse } from "antd";
 
+const { Panel } = Collapse;
 const { Header, Content, Footer, Sider } = Layout;
 const { Title } = Typography;
 
@@ -55,6 +51,14 @@ function MenuNav() {
             About Us
           </Menu.Item>
           <Menu.Item key="8" icon={<ShopOutlined />}>
+            {/* <Collapse defaultActiveKey={["1"]}>
+              <Panel
+                theme="dark"
+                mode="inline"
+                header="Friends"
+                key="1"
+              ></Panel>
+            </Collapse> */}
             Friends
           </Menu.Item>
         </Menu>

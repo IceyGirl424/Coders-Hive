@@ -8,7 +8,6 @@ import MenuNav from "./MenuNav";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
     <Parent />
   </React.StrictMode>,
   document.getElementById("root")

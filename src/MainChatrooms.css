@@ -1,0 +1,33 @@
+.chat-textbox {
+  color: #619b84;
+  margin: 10px;
+  bottom: 0px;
+  position: absolute;
+  width: 70%;
+}
+
+.text-area-texbox {
+  margin: 0px;
+  background-color: #619b84;
+}
+
+.message-card {
+  width: 50%;
+  margin: 10px;
+}
+
+.message-card-time,
+.message-card-userName {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.message-card-text {
+  text-align: right;
+  margin: 10px;
+}
+
+.chat-screen {
+  background-color: white;
+}
