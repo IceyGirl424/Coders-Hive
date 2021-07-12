@@ -102,6 +102,18 @@ class ChatScreen extends React.Component {
           messageTime="8:56 pm"
           color="#7A6263"
         />
+        <ChatCard
+          messageText="I love blockchain"
+          userName="Olive West"
+          messageTime="8:56 pm"
+          color="#7A6263"
+        />
+        <ChatCard
+          messageText="I love blockchain"
+          userName="Olive West"
+          messageTime="8:56 pm"
+          color="#7A6263"
+        />
         <ChatTextBox />;
       </div>
     );
