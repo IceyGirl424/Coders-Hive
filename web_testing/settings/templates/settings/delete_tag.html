@@ -1,0 +1,18 @@
+{% extends "account/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h1>Select A Tag You Want To Delete</h1>
+    <br/>
+    <form class="from-group" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-success">Delete Tag</button>
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

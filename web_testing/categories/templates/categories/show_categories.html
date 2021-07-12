@@ -1,0 +1,25 @@
+{% extends "account/base.html" %}
+{% block content %}
+<h1>Current Category Tags</h1>
+<br/>
+{% if tags.count == 0 %}
+    <div class="alert alert-warning">
+        You do not have any tags. Upload video files to receive tags.
+    </div>
+{% else %}
+<table class="table table-info">
+    <thead>
+    <tr>
+        <th scope="col">Tags</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for tag in tags %}
+    <tr>
+      <td>{{ tag.tag }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+{% endblock %}
