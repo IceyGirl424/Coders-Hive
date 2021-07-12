@@ -5,13 +5,16 @@ import { Button } from "antd";
 import { Layout, Menu } from "antd";
 import {
   AppstoreOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  ShopOutlined,
+  CustomerServiceOutlined,
+  CommentOutlined,
   TeamOutlined,
-  UserOutlined,
+  FileTextOutlined,
+  RadarChartOutlined,
   UploadOutlined,
-  VideoCameraOutlined,
+  AliwangwangOutlined,
+  ArrowLeftOutlined,
+  HomeOutlined,
+  SettingOutlined,
 } from "@ant-design/icons";
 import { Row, Col } from "antd";
 import { Card } from "antd";
@@ -36,26 +39,29 @@ function MenuNav() {
       >
         <div className="logo" />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]}>
-          <Menu.Item key="1" icon={<UserOutlined />}>
-            <Link to="/">Hive Central</Link>
+          <Menu.Item key="1" icon={<HomeOutlined />}>
+            <Link to="/Home">Hive Central</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+          <Menu.Item key="2" icon={<SettingOutlined />}>
             User Settings
           </Menu.Item>
           <Menu.Item key="3" icon={<UploadOutlined />}>
             Common Resources
           </Menu.Item>
-          <Menu.Item key="4" icon={<BarChartOutlined />}>
+          <Menu.Item key="4" icon={<CustomerServiceOutlined />}>
             Public Video Chat
           </Menu.Item>
-          <Menu.Item key="5" icon={<CloudOutlined />}>
+          <Menu.Item key="5" icon={<CommentOutlined />}>
             <Link to="/MainChatrooms"> Main Chatrooms </Link>
           </Menu.Item>
-          <Menu.Item key="6" icon={<TeamOutlined />}>
+          <Menu.Item key="6" icon={<FileTextOutlined />}>
             About Us
           </Menu.Item>
-          <Menu.Item key="8" icon={<ShopOutlined />}>
+          <Menu.Item key="7" icon={<TeamOutlined />}>
             Friends
+          </Menu.Item>
+          <Menu.Item key="8" icon={<ArrowLeftOutlined />}>
+            <Link to="/">Logout</Link>
           </Menu.Item>
         </Menu>
       </Sider>

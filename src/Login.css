@@ -1,0 +1,28 @@
+body {
+    background-color: bisque;
+    background-image: url("Team-Background-Mountains.png");
+}
+
+.Title{
+    background-color: blueviolet;
+}
+
+.InputContainer{
+    margin-left: 350px;
+    margin-right: auto;
+    width: 60%;
+    /* align-items: center; */
+}
+
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding-top: 10em;
+}
+
+
+
+/* .Mountains{
+    background-image: url("Team-Background-Mountains.png");
+} */
