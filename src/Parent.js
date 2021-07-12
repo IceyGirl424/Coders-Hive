@@ -7,27 +7,23 @@ import MainChatrooms from "./MainChatrooms";
 import MenuNav from "./MenuNav";
 import Login from "./Login";
 
-
 function Parent() {
   return (
     <Router>
+      <Switch>
+        <Route exact path="/" component={Login} />
 
-    <Switch>
-      <Route exact path="/" component={Login} />
-
-
-    <Router>
-      <div className="content">
-        <MenuNav />
-        <Switch>
-          <Route path="/Home" exact component={App} />
-          <Route path="/MainChatrooms" component={MainChatrooms} />
-          {/* <Route path="/Login" component={Login} /> */}
-        </Switch>
-      </div>
-    </Router>
-
-    </Switch>
+        <Router>
+          <div className="content">
+            <MenuNav />
+            <Switch>
+              <Route path="/Home" exact component={App} />
+              <Route path="/MainChatrooms" component={MainChatrooms} />
+              {/* <Route path="/Login" component={Login} /> */}
+            </Switch>
+          </div>
+        </Router>
+      </Switch>
     </Router>
   );
 }

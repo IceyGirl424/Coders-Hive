@@ -6,7 +6,7 @@ import "./MainChatrooms.css";
 
 const { TextArea } = Input;
 
-const messages = [
+let messages = [
   {
     chatUserID: 1,
     name: "Oliver West",
@@ -60,6 +60,42 @@ class ChatScreen extends React.Component {
   render() {
     return (
       <div class="chat-screen">
+        <ChatCard
+          messageText="I love blockchain"
+          userName="Olive West"
+          messageTime="8:56 pm"
+          color="#7A6263"
+        />
+        <ChatCard
+          messageText="I love blockchain"
+          userName="Olive West"
+          messageTime="8:56 pm"
+          color="#7A6263"
+        />
+        <ChatCard
+          messageText="I love blockchain"
+          userName="Olive West"
+          messageTime="8:56 pm"
+          color="#7A6263"
+        />
+        <ChatCard
+          messageText="I love blockchain"
+          userName="Olive West"
+          messageTime="8:56 pm"
+          color="#7A6263"
+        />
+        <ChatCard
+          messageText="I love blockchain"
+          userName="Olive West"
+          messageTime="8:56 pm"
+          color="#7A6263"
+        />
+        <ChatCard
+          messageText="I love blockchain"
+          userName="Olive West"
+          messageTime="8:56 pm"
+          color="#7A6263"
+        />
         <ChatCard
           messageText="I love blockchain"
           userName="Olive West"

@@ -4,6 +4,8 @@
   bottom: 0px;
   position: absolute;
   width: 70%;
+  text-align: center;
+  font-weight: bolder;
 }
 
 .text-area-texbox {
@@ -16,18 +18,22 @@
   margin: 10px;
 }
 
-.message-card-time,
+.message-card-time {
+  text-align: left;
+  margin: 10px 0px 0px 10px;
+  padding: 10px 0px 0px 10px;
+}
 .message-card-userName {
   text-align: left;
-  margin: 10px;
-  padding: 10px;
+  margin: 0px 0px 10px 10px;
+  padding: 0px 0px 10px 10px;
 }
 
 .message-card-text {
   text-align: right;
-  margin: 10px;
+  margin-right: 10px;
 }
 
 .chat-screen {
-  background-color: white;
+  background-color: transparent;
 }
