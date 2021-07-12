@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import Parent from "./Parent";
 import reportWebVitals from "./reportWebVitals";
 import MenuNav from "./MenuNav";
