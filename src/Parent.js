@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { HashRouter } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import App from "./App";
 
@@ -9,11 +10,12 @@ import Login from "./Login";
 
 function Parent() {
   return (
-    <Router>
+    <React.StrictMode>
+    <HashRouter>
       <Switch>
         <Route exact path="/" component={Login} />
 
-        <Router>
+        
           <div className="content">
             <MenuNav />
             <Switch>
@@ -22,9 +24,10 @@ function Parent() {
               {/* <Route path="/Login" component={Login} /> */}
             </Switch>
           </div>
-        </Router>
+        
       </Switch>
-    </Router>
+    </HashRouter>
+    </React.StrictMode>
   );
 }
 
